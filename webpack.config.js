@@ -9,7 +9,7 @@ const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const cssnano = require("cssnano");
 
 module.exports = {
-  entry: ['./assets/js/main.js', './assets/scss/main.scss'],
+  entry: ['./public/assets/js/main.js', './public/assets/scss/main.scss'],
   output: {
     filename: './public/build/main.min.js',
     path: path.resolve(__dirname)
