@@ -1,6 +1,57 @@
-@import 'bootstrap';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+
+$primary: #dcef14;
+$secondary: #848484;
+$thirsty: #FF4C29;
+$theme-colors: (
+    primary: $primary,
+    secondary: $secondary,
+);
+// (Required) Import Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+@font-face {
+    font-family: 'Cosmos';
+    src: local('Cosmos'), url('/public/fonts/AVCosmos-Regular.woff') format('woff');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
 
 body {
     background:#000;
-    color:#fff;
+}
+
+a {
+    color: $primary;
+}
+
+h1 {
+    color: $primary;
+    font-family: 'Cosmos';
+    font-size: 10rem;
+    background: linear-gradient(
+            180deg,
+            rgba(208, 224, 39, 0.2) -0.05%,
+            rgba(220, 239, 20, 0.2) 47.89%,
+            rgba(91, 97, 31, 0.2) 47.9%,
+            rgba(233, 255, 0, 0.2) 100%
+        ),
+        #d0e027;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0px 0px 14px rgba(208, 224, 39, 0.39));
+    line-height: 110px;
+    @media (max-width: 768px) {
+        font-size: 7rem;
+    }
+
+    @media (max-width: 515px) {
+        font-size: 5rem;
+    }
+
+    @media (max-width: 350px) {
+        font-size: 4rem;
+    }
 }
