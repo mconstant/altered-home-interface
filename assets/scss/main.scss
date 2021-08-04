@@ -15,7 +15,7 @@ $theme-colors: (
 
 @font-face {
     font-family: 'Cosmos';
-    src: local('Cosmos'), url('./public/fonts/AVCosmos-Regular.woff') format('woff');
+    src: local('Cosmos'), url('/public/fonts/AVCosmos-Regular.woff') format('woff');
     /* other formats include: 'woff2', 'truetype, 'opentype',
                             'embedded-opentype', and 'svg' */
 }
@@ -29,7 +29,7 @@ body {
     color:#fff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-image:url('./public/img/bg.svg');
+    background-image:url('/public/img/bg.svg');
     background-attachment: fixed;
     background-size:cover;
     background-repeat:no-repeat;
