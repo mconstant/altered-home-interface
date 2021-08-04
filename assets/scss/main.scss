@@ -12,6 +12,8 @@ $theme-colors: (
 // (Required) Import Bootstrap
 @import 'bootstrap/scss/bootstrap';
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
 @font-face {
     font-family: 'Cosmos';
     src: local('Cosmos'), url('/public/fonts/AVCosmos-Regular.woff') format('woff');
@@ -19,8 +21,29 @@ $theme-colors: (
                             'embedded-opentype', and 'svg' */
 }
 
+html {
+    height: 100%;
+}
+
 body {
     background:#000;
+    color:#fff;
+    font-family: 'Oswald', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h2,h3 {
+    color:$primary;
+    text-transform:uppercase;
+}
+
+h2 {
+    font-size:24px;
+}
+
+h3 {
+    font-size:18px;
 }
 
 a {
