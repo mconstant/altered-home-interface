@@ -11,7 +11,6 @@ $theme-colors: (
 );
 // (Required) Import Bootstrap
 @import 'bootstrap/scss/bootstrap';
-
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
 
 @font-face {
@@ -28,14 +27,17 @@ html {
 body {
     background:#000;
     color:#fff;
-    font-family: 'Oswald', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-image:url('/public/img/bg.svg');
+    background-size:cover;
+    background-repeat:no-repeat;
 }
 
 h2,h3 {
     color:$primary;
     text-transform:uppercase;
+    font-family: 'Oswald', sans-serif;
 }
 
 h2 {
@@ -44,6 +46,10 @@ h2 {
 
 h3 {
     font-size:18px;
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
 }
 
 a {
