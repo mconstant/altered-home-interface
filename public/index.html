@@ -8,9 +8,49 @@
     <link rel="stylesheet" href="./build/main.min.css">
 </head>
 <body>
-    
+    <div class="navbar navbar-expand p-2 p-md-3">
+        <div class="container-fluid">
+            <div class="navbar-nav ms-auto">                
+             
+                    <a href="#" class="btn btn-outline-primary nav-item mx-3">Webapp</a>
+      
+            </div>
+        </div>
+    </div>
     <div class="container">
-            <h1>Altered</h1>
+            <div class="row">
+                <div class="col-12 text-center py-4">
+                    <h1>Altered</h1>
+                </div>
+                <div class="col-12">
+                    <h2>How works Altered protocol?</h2>
+                    <p>Altered protocol is an Elastic token that’s mean the supply can be altered algorithmically by expanding or contracting himself every 24 hours there is some conditions we will explain at continuation.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Expansion</h3>
+                    <p>This is when the protocol increase the total supply</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Contraction</h3>
+                    <p>This is when the protocol decrease the total supply</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Equilibrium zone</h3>
+                    <p>This is when the protocol don’t alter the total supply</p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Condition</h2>
+                    <p>If the volume exchange price is in a range of 5% the rebase will not happen because we are in the equilibrium that’s mean if the price target is 1$ and the current price is between 0.95 to 1.05 we are in the equilibrium. 
+                        If the price is less than the equilibrium zone the protocol contract the total supply resulting in a deflationary balances to all holders
+                        If the price is higher than the equilibrium zone the protocol expand the total supply resulting in inflationary balances to all holders </p>
+                </div>
+                <div class="col-md-6"></div>
+                <div class="col-md-6"></div>
+                <div class="col-md-6">
+                    <h2>Damping</h2>
+                    <p>When the protocol expand or contract the total supply he do it with a smoothing target to avoid overcorrection at the beginning it will be 30 days and after the algorithm will auto adjust it to 10 days</p>
+                </div>
+            </div>
     </div>
 
     <script src="./build/main.min.js"></script>
