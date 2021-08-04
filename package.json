@@ -1,0 +1,30 @@
+{
+  "name": "altered-home-interface",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/LoTerra/altered-home-interface.git",
+  "author": "Timboow <tim@yourcreativebrand.nl>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode development",
+    "dist": "webpack --mode production",
+    "watch": "webpack --watch --mode development"
+  },
+  "dependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.9",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "bootstrap": "^5.0.2",
+    "css-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.1.0",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "uglifyjs-webpack-plugin": "^2.2.0"
+  },
+  "devDependencies": {
+    "sass": "^1.37.5",
+    "sass-loader": "^12.1.0",
+    "webpack": "^5.48.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
